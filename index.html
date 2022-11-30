@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <form name="fform">
+            <div class="title">
+                <h4> The Gathering of College Student Data </h4>
+                <p> Politeknik Amamapare Timika </p> <hr>
+            </div>
+            <div class="inputForm">
+                <div class="box0">
+                    <h4> Data Entry Form </h4>
+                </div>
+                <div class="box1">
+                    <label> Nama Mahasiswa </label> <br>
+                    <input type="text" name="inputNama">
+                </div>
+                <div class="box2">
+                    <label> Nomor Induk Mahasiswa </label> <br>
+                    <input type="number" name="inputNim">
+                </div>
+                <div class="box3">
+                    <label> Jenis Kelamin </label> <br>
+                    <select name="inputGender">
+                        <option> Laki-Laki </option>
+                        <option> Perempuan </option>
+                    </select>
+                </div>
+                <div class="box4">
+                    <label> Agama </label> <br>
+                    <select name="inputAgama">
+                        <option> Islam </option>
+                        <option> Kristen Protestan </option>
+                        <option> Kristen Katholik </option>
+                        <option> Hindu </option>
+                        <option> Budha </option>
+                        <option> Konghucu </option>
+                    </select>
+                </div>
+                <div class="box5">
+                    <label> Status </label> <br>
+                    <input type="radio" name="inputStatus"> <label> Menikah </label>
+                </div>
+                <div class="box6">
+                    <label> Program Studi </label> <br>
+                    <select name="inputProdi">
+                        <option> Teknik Mesin </option>
+                        <option> Teknik Listrik </option>
+                        <option> Teknik Sipil </option>
+                        <option> Teknik Pertambangan </option>
+                        <option> Teknik Rekayasa Internet </option>
+                    </select>
+                </div>
+                <div class="box7">
+                    <label> Pesan Mahasiswa </label> <br>
+                    <textarea name="inputPesan" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="outputForm">
+                <div class="box0">
+                    <h4> Results of Data Entry </h4>
+                </div>
+                <div class="box1">
+                    <label> Nama Mahasiswa </label> <br>
+                    <input type="text" name="outputNama">
+                </div>
+                <div class="box2">
+                    <label> Nomor Induk Mahasiswa </label> <br>
+                    <input type="text" name="outputNim">
+                </div>
+                <div class="box3">
+                    <label> Jenis Kelamin </label> <br>
+                    <input type="text" name="outputGender">
+                </div>
+                <div class="box4">
+                    <label> Agama </label> <br>
+                    <input type="text" name="outputAgama">
+                </div>
+                <div class="box5">
+                    <label> Status </label> <br>
+                    <input type="text" name="outputStatus">
+                </div>
+                <div class="box6">
+                    <label> Program studi </label> <br>
+                    <input type="text" name="outputProdi">
+                </div>
+                <div class="box7">
+                    <label> Pesan Mahasiswa </label> <br>
+                    <textarea name="outputPesan" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <input type="button" value="Submit Data" onclick="submitData()">
+                <input type="reset" value="Reset Data">
+                <h5> Copyright &copy; | Dendra Hilal Ma'ruf (22512011) </h5>
+            </div>
+        </form>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
